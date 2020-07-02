@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Binding var document: DailyLoggerDocument
-
     var body: some View {
-        TextEditor(text: $document.text)
+        VStack {
+            Text("Hello world")
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(document: .constant(DailyLoggerDocument()))
+        ContentView()
     }
 }

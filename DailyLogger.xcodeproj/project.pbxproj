@@ -11,12 +11,12 @@
 		53A2A20B24AE7E220065ACF4 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2A20A24AE7E220065ACF4 /* Tests_macOS.swift */; };
 		53A2A20D24AE7E220065ACF4 /* DailyLoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2A1E324AE7E200065ACF4 /* DailyLoggerApp.swift */; };
 		53A2A20E24AE7E220065ACF4 /* DailyLoggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2A1E324AE7E200065ACF4 /* DailyLoggerApp.swift */; };
-		53A2A20F24AE7E220065ACF4 /* DailyLoggerDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2A1E424AE7E200065ACF4 /* DailyLoggerDocument.swift */; };
-		53A2A21024AE7E220065ACF4 /* DailyLoggerDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2A1E424AE7E200065ACF4 /* DailyLoggerDocument.swift */; };
 		53A2A21124AE7E220065ACF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2A1E524AE7E200065ACF4 /* ContentView.swift */; };
 		53A2A21224AE7E220065ACF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2A1E524AE7E200065ACF4 /* ContentView.swift */; };
 		53A2A21324AE7E220065ACF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A2A1E624AE7E220065ACF4 /* Assets.xcassets */; };
 		53A2A21424AE7E220065ACF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53A2A1E624AE7E220065ACF4 /* Assets.xcassets */; };
+		53A2A22424AE82570065ACF4 /* QuickNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2A22324AE82570065ACF4 /* QuickNav.swift */; };
+		53A2A22524AE82570065ACF4 /* QuickNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2A22324AE82570065ACF4 /* QuickNav.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		53A2A1E324AE7E200065ACF4 /* DailyLoggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLoggerApp.swift; sourceTree = "<group>"; };
-		53A2A1E424AE7E200065ACF4 /* DailyLoggerDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLoggerDocument.swift; sourceTree = "<group>"; };
 		53A2A1E524AE7E200065ACF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53A2A1E624AE7E220065ACF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53A2A1EB24AE7E220065ACF4 /* DailyLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +51,7 @@
 		53A2A20624AE7E220065ACF4 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53A2A20A24AE7E220065ACF4 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		53A2A20C24AE7E220065ACF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53A2A22324AE82570065ACF4 /* QuickNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickNav.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				53A2A1E324AE7E200065ACF4 /* DailyLoggerApp.swift */,
-				53A2A1E424AE7E200065ACF4 /* DailyLoggerDocument.swift */,
+				53A2A22624AE825D0065ACF4 /* Home */,
 				53A2A1E524AE7E200065ACF4 /* ContentView.swift */,
 				53A2A1E624AE7E220065ACF4 /* Assets.xcassets */,
 			);
@@ -153,6 +153,14 @@
 				53A2A20C24AE7E220065ACF4 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		53A2A22624AE825D0065ACF4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				53A2A22324AE82570065ACF4 /* QuickNav.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,7 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53A2A20F24AE7E220065ACF4 /* DailyLoggerDocument.swift in Sources */,
+				53A2A22424AE82570065ACF4 /* QuickNav.swift in Sources */,
 				53A2A20D24AE7E220065ACF4 /* DailyLoggerApp.swift in Sources */,
 				53A2A21124AE7E220065ACF4 /* ContentView.swift in Sources */,
 			);
@@ -322,7 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53A2A21024AE7E220065ACF4 /* DailyLoggerDocument.swift in Sources */,
+				53A2A22524AE82570065ACF4 /* QuickNav.swift in Sources */,
 				53A2A20E24AE7E220065ACF4 /* DailyLoggerApp.swift in Sources */,
 				53A2A21224AE7E220065ACF4 /* ContentView.swift in Sources */,
 			);

@@ -10,8 +10,18 @@ import SwiftUI
 @main
 struct DailyLoggerApp: App {
     var body: some Scene {
-        DocumentGroup(newDocument: DailyLoggerDocument()) { file in
-            ContentView(document: file.$document)
+        WindowGroup {
+            QuickNav()
+            
+//            NavigationView {
+//
+//            }
         }
+    }
+}
+
+struct DailyLoggerApp_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }
